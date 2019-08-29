@@ -1,0 +1,42 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Ionic Blank
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+    <ion-item *ngFor="let car of carros" (click)="selecionaCarro(car)">
+      <h2>{{ car.nome }}</h2>
+      <p>R$ {{ car.preco }}</p>
+      <!-- <button ion-button color="danger" (click)="deleteItem(car)">
+        Delete
+      </button> -->
+    </ion-item>
+  </ion-list>
+  <!-- <ion-list>
+    <ion-item-sliding *ngFor="let car of carros">
+        <button ion-item>
+        <h2>{{ car.nome }}</h2>
+        <p>R$ {{ car.preco }}</p>
+      </button>
+        <ion-item-options>
+          <button ion-button color="danger" (click)="deleteItem(car)">
+            <ion-icon name="trash"></ion-icon>
+            Delete
+          </button>
+          <button ion-button color="blue" >
+              <ion-icon name="create"></ion-icon>
+              Editar
+            </button>
+            <button ion-button color="green" >
+                <ion-icon name="card"></ion-icon>
+                Comp..
+              </button>
+        </ion-item-options>
+      </ion-item-sliding>
+    </ion-list> -->
+  
+</ion-content>
